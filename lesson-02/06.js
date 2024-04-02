@@ -7,7 +7,7 @@ let passportWithAddress = {
     }
 };
 
-let passportCopy = JSON.parse(JSON.stringify(passportWithAddress));
+let passportCopy = R.cloneDeep(passportWithAddress);
 
 passportCopy.address.city = "Bobryisk";
 
