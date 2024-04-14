@@ -4,5 +4,14 @@
     [111, 200, 333, 400, 555],
 ];
 
-const filteredNumbers = numbers.map(row => row.filter(num => num % 2 === 0));
-console.log(filteredNumbers);
+const removeOddNumbers = (arr) => {
+    return arr.filter((num) => num % 2 === 0);
+};
+
+const removeOddNumbersIn2DArray = (arr) => {
+    return arr.map((subArray) => removeOddNumbers(subArray));
+};
+
+const result = removeOddNumbersIn2DArray(numbers);
+
+console.log(result);
