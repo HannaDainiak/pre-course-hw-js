@@ -4,10 +4,6 @@
     [111, 200, 333, 400, 555],
 ];
 
-const removeOddNumbers = (arr) => {
-    return arr.filter((num) => num % 2 === 0);
-};
-
 const removeOddNumbersIn2DArray = (arr) => {
     return arr.map((subArray) => removeOddNumbers(subArray));
 };
